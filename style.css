@@ -24,6 +24,11 @@ body {
     border-radius: 30px;
     padding: 40px 30px;
     color: #969fad;
+    transition: display .3s ease;
+}
+
+.hidden {
+    display: none;
 }
 
 .star {
@@ -108,6 +113,23 @@ button {
 button:hover {
     color: #fc7614;
     background-color: #fff;
+}
+
+.img {
+    text-align: center;
+}
+
+.info2 {
+    text-align: center;
+}
+
+.selected-number2 {
+    color: #fc7614;
+    background-color: #262e38;
+    border-radius: 50px;
+    padding: 8px;
+    width: auto;
+    text-align: center;
 }
 
 .attribution {
