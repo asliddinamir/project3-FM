@@ -58,7 +58,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 25px;
-    cursor: pointer;
     margin-top: 20px;
     user-select: none;
 }
@@ -72,10 +71,18 @@ body {
     justify-content: center;
     user-select: none;
     align-items: center;
+    cursor: pointer;
 }
 
-.nums span {
-    cursor: pointer;
+
+.num.active {
+    background-color: #fc7614;
+    color: #fff;
+    font-weight: bold;
+}
+
+.num.active:hover {
+    background-color: #fc7614;
 }
 
 .nums span:hover {
@@ -86,7 +93,7 @@ body {
 button {
     background-color: #fc7614;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 15px;
     border: none;
     font-family: inherit;
     text-transform: uppercase;
