@@ -49,6 +49,7 @@ body {
 
 .description {
     line-height: 1.5;
+    font-size: 15px;
 }
 
 .nums {
@@ -85,7 +86,7 @@ body {
 button {
     background-color: #fc7614;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 35px;
     border: none;
     font-family: inherit;
     text-transform: uppercase;
@@ -106,6 +107,8 @@ button:hover {
     position: fixed;
     bottom: 10px;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .attribution a {
@@ -114,8 +117,22 @@ button:hover {
 }
 
 @media(max-width:460px) {
+    body {
+        padding: 0;
+    }
+
     .container {
         max-width: 95%;
+        padding: 20px;
+        min-height: 350px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 14px;
     }
 
     .star {
@@ -134,5 +151,15 @@ button:hover {
 
     .nums {
         gap: 10px
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:379px) {
+    .nums {
+        gap: 5px;
     }
 }
