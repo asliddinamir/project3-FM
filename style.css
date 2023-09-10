@@ -55,6 +55,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 25px;
     cursor: pointer;
     margin-top: 20px;
@@ -110,4 +111,28 @@ button:hover {
 .attribution a {
     color: aqua;
     cursor: pointer;
+}
+
+@media(max-width:460px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .star {
+        width: 40px;
+        height: 40px;
+    }
+
+    .star i {
+        font-size: 13px;
+    }
+
+    .nums span {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nums {
+        gap: 10px
+    }
 }
